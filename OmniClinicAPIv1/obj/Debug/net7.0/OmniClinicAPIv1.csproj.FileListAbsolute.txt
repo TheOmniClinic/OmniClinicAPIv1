@@ -31,3 +31,17 @@ C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\obj\Debug\net7.0\refint\OmniCl
 C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\obj\Debug\net7.0\OmniClinicAPIv1.pdb
 C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\obj\Debug\net7.0\OmniClinicAPIv1.genruntimeconfig.cache
 C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\obj\Debug\net7.0\ref\OmniClinicAPIv1.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\DnsClient.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\MongoDB.Bson.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\MongoDB.Driver.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\MongoDB.Driver.Core.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\SharpCompress.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\Snappier.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\ZstdSharp.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
