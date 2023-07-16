@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OmniClinicAPIv1.props" />
+</Project>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\OmniClinicAPIv1.props" />
+</Project>
