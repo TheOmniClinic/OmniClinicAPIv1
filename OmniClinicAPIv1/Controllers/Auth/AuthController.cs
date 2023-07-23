@@ -6,6 +6,8 @@ using System.Runtime.InteropServices.JavaScript;
 
 namespace OmniClinicAPIv1.Controllers.Auth
 {
+    [ApiController]
+    [Route("api/v1/auth")]
     public class AuthController : Controller
     {
         private readonly UserService _userService;
@@ -16,29 +18,18 @@ namespace OmniClinicAPIv1.Controllers.Auth
         }
 
         [HttpPost]
-        [Route("api/v1/createauth")]
-        public async Task<IActionResult> CreateAuthAsync(User user)
+        public IActionResult Auth(User user)
         {
-            await _userService.PostUser(user);
-
-            var token = TokenService.GenerateToken(user);
-            return Ok(token);
-        }
-
-        [HttpPost]
-        [Route("api/v1/updateauth")]
-        public IActionResult UpdateAuth(string username, string password)
-        {
-            User user = new User();
-            user.Name = username;
-
-            if (username == "filipe" && password == "123456")
+            try
             {
-                var token = TokenService.GenerateToken(new User());
-                return Ok(token);
-            }
+                _userService.Auth(user);
+                return Ok("Successful login");
 
-            return BadRequest("username or password invalid");
+            }
+            catch (Exception)
+            {
+                throw new Exception("There was an error to login");
+            }
         }
     }
 }

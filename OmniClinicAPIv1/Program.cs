@@ -3,6 +3,8 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using OmniClinicAPIv1.ContextDB;
 using OmniClinicAPIv1.JWT;
+using OmniClinicAPIv1.JWT.Interfaces;
+using OmniClinicAPIv1.JWT.Services;
 using OmniClinicAPIv1.Service.User;
 using System.Text;
 
@@ -13,6 +15,9 @@ builder.Services.Configure<UserContext>
     (builder.Configuration.GetSection("MongoDB"));
 
 builder.Services.AddSingleton<MongoDBSettings>();
+
+builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<UserService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

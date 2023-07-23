@@ -3,34 +3,35 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OmniClinicAPIv1.ContextDB;
 using OmniClinicAPIv1.Models;
+using OmniClinicAPIv1.Service.User;
 using System;
 using System.Collections.Generic;
 
 namespace OmniClinicAPIv1.Controllers
 {
-    [ApiController] 
-    [Route("api/users")]
+    [ApiController]
+    [Route("api/v1/users")]
     public class UserController : ControllerBase
     {
-        private readonly MongoDBSettings _userMongo;
+        private readonly UserService _userService;
 
-        public UserController(MongoDBSettings mongoDBSettings)
+        public UserController(UserService userService)
         {
-            _userMongo = mongoDBSettings;
+            _userService = userService;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PostUser(User user)
+        {
+            await _userService.PostUser(user);
+            return Ok(user.Token);
         }
 
         [Authorize]
         [HttpGet]
         public async Task<List<User>> GetUsers()
-            => await _userMongo.GetAsync();
-
-        [HttpPost]
-        public async Task<User> PostUser(User user)
         {
-            await _userMongo.CreateAsync(user);
-
-            return user;
+            return await _userService.GetUsers();
         }
-
     }
 }

@@ -19,6 +19,8 @@ namespace OmniClinicAPIv1.ContextDB
         public async Task<List<User>> GetAsync() => await _userCollection.Find(x => true).ToListAsync();
 
         public async Task<User> GetAsync(string id) => await _userCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+        
+        public async Task<User> GetAsyncByEmail(string email) => await _userCollection.Find(x => x.Email == email).FirstOrDefaultAsync();
 
         public async Task CreateAsync(User user) => await _userCollection.InsertOneAsync(user);
 
