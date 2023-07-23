@@ -45,3 +45,11 @@ C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\runtimes\linu
 C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
 C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Caio\Workspace\OmniClinicAPIv1\OmniClinicAPIv1\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
