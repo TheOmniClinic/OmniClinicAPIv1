@@ -14,5 +14,8 @@ namespace OmniClinicAPIv1.Models
 
         [BsonElement("Email")]
         public string Email { get; set; } = null;
+
+        [BsonElement("Password")]
+        public string Password { get; set; } = null;
     }
 }

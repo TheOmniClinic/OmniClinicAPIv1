@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OmniClinicAPIv1.ContextDB;
 using OmniClinicAPIv1.Models;
@@ -18,6 +19,7 @@ namespace OmniClinicAPIv1.Controllers
             _userMongo = mongoDBSettings;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<List<User>> GetUsers()
             => await _userMongo.GetAsync();
